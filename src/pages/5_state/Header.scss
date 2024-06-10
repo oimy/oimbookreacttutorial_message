@@ -1,0 +1,20 @@
+@use "Box";
+
+$header-height: 50px;
+
+span.header-title {
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 10px grey;
+}
+
+div.header {
+    width: 100%;
+    height: $header-height;
+    background-color: teal;
+    border-top-left-radius: Box.$box-border-radius;
+    border-top-right-radius: Box.$box-border-radius;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
