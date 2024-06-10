@@ -1,0 +1,46 @@
+div.chapter-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.chapter-box {
+    margin: 10px;
+    display: flex;
+}
+
+div.chapter-box:hover {
+    transform: scale(1.1) translateX(-16px);
+}
+
+span.chapter-item {
+    width: 300px;
+    height: 60px;
+    display: block;
+    align-content: center;
+    text-align: left;
+    padding-left: 30px;
+    box-shadow: 0 0 8px lightgrey;
+}
+
+span.chapter-item:hover {
+    background-color: darkslategray;
+    color: white;
+}
+
+span.chapter-icon {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin-left: 20px;
+    align-content: center;
+    box-shadow: 0 0 8px lightgrey;
+}
+
+span.chapter-icon:hover {
+    background-color: darkslategray;
+    color: white;
+}
