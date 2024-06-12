@@ -1,0 +1,59 @@
+div.message-box {
+    padding: 7px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+div.message-box.in {
+    justify-content: left;
+}
+
+div.message-box.out {
+    justify-content: right;
+}
+
+span.message-line {
+    max-width: 250px;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+    overflow-wrap: anywhere;
+}
+
+span.message-line:hover {
+    cursor: pointer;
+    filter: brightness(95%);
+}
+
+div.message-box {
+    &.in {
+        &.light span.message-line {
+            background-color: palegreen;
+        }
+
+        &.dark span.message-line {
+            background-color: darkgreen;
+            color: white;
+            box-shadow: 0 0 5px dimgray;
+        }
+    }
+
+    &.out {
+        &.light span.message-line {
+            background-color: yellow;
+        }
+
+        &.dark span.message-line {
+            background-color: indigo;
+            color: white;
+            box-shadow: 0 0 5px dimgray;
+        }
+    }
+}
+
+i.fa-check {
+    margin-left: 10px;
+    color: green;
+}

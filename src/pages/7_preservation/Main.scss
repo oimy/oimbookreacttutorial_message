@@ -1,0 +1,29 @@
+button.box-friend {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    border: none;
+    box-shadow: 0 0 10px lightgrey;
+    background-color: ivory;
+    position: absolute;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    cursor: pointer;
+
+    &:hover {
+        background-color: lightyellow;
+    }
+
+    .fa-solid {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+button.previous {
+    left: calc(50% - 350px);
+}
+
+button.next {
+    left: calc(50% + 350px);
+}

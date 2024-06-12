@@ -1,0 +1,10 @@
+$screen-height: 260px;
+
+div.screen {
+    height: $screen-height;
+    padding: 15px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}

@@ -1,0 +1,83 @@
+@use "../chat/Box.scss";
+
+$box-border-radius: Box.$box-border-radius;
+
+$list-item-hover-background-light-first-color: white;
+$list-item-hover-background-light-second-color: lightyellow;
+$list-item-hover-background-dark-first-color: rgb(48, 48, 48);
+$list-item-hover-background-dark-second-color: rgb(29, 29, 29);
+
+div.box {
+    &.light {
+        background-color: white;
+
+        div.list-item {
+            &:hover {
+                background-image: linear-gradient(
+                    to bottom right,
+                    $list-item-hover-background-light-first-color,
+                    $list-item-hover-background-light-second-color,
+                    $list-item-hover-background-light-second-color,
+                    $list-item-hover-background-light-first-color,
+                    $list-item-hover-background-light-first-color,
+                    $list-item-hover-background-light-second-color,
+                    $list-item-hover-background-light-second-color,
+                    $list-item-hover-background-light-first-color,
+                    $list-item-hover-background-light-first-color
+                );
+            }
+        }
+    }
+
+    &.dark {
+        background-color: rgb(37, 37, 41);
+
+        div.list-item {
+            color: white;
+
+            &:hover {
+                background-image: linear-gradient(
+                    to bottom right,
+                    $list-item-hover-background-dark-first-color,
+                    $list-item-hover-background-dark-second-color,
+                    $list-item-hover-background-dark-second-color,
+                    $list-item-hover-background-dark-first-color,
+                    $list-item-hover-background-dark-first-color,
+                    $list-item-hover-background-dark-second-color,
+                    $list-item-hover-background-dark-second-color,
+                    $list-item-hover-background-dark-first-color,
+                    $list-item-hover-background-dark-first-color
+                );
+            }
+        }
+    }
+}
+
+div.list-item {
+    height: 70px;
+    position: relative;
+    border-bottom: 1px solid lightgrey;
+
+    &:hover {
+        cursor: pointer;
+        font-size: 1.3em;
+        background-size: 1000px 1000px;
+        animation: change-background-color 3s linear infinite;
+    }
+
+    span.name {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+
+@keyframes change-background-color {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1000px 0;
+    }
+}

@@ -5,6 +5,8 @@ import ChatBox3Condition from "./pages/3_condition/ChatBox";
 import ChatBox4Css from "./pages/4_css/ChatBox";
 import ChatBox5State from "./pages/5_state/Box";
 import ChatBox6Input from "./pages/6_input/Box";
+import ChatMain7Preservation from "./pages/7_preservation/Main";
+import ChatMain8Context from "./pages/8_context/Main";
 
 export interface ComponentRoute {
     component: () => React.JSX.Element;
@@ -51,6 +53,22 @@ export const componentRoutes: ComponentRoute[] = [
         title: "6. 인터렉티브한 Input 만들기",
         postUrl:
             "https://oimbook.tistory.com/entry/6-%EC%9D%B8%ED%84%B0%EB%A0%89%ED%8B%B0%EB%B8%8C%ED%95%9C-Input-%EB%A7%8C%EB%93%A4%EA%B8%B0"
+        ,
+    },
+    {
+        component: ChatMain7Preservation,
+        path: "/7-preservation",
+        title: "7. State 보존하기",
+        postUrl:
+            "https://oimbook.tistory.com/entry/7-State-%EB%B3%B4%EC%A1%B4%ED%95%98%EA%B8%B0"
+        ,
+    },
+    {
+        component: ChatMain8Context,
+        path: "/8-context",
+        title: "8. Context 전달하기",
+        postUrl:
+            "https://oimbook.tistory.com/entry/7-State-%EB%B3%B4%EC%A1%B4%ED%95%98%EA%B8%B0"
         ,
     },
 ];

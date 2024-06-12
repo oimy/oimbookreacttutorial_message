@@ -1,0 +1,6 @@
+@use "../chat/Header.scss";
+
+div.friend-header {
+    @extend div, .chat-header;
+    background-color: mediumseagreen;
+}

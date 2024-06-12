@@ -1,0 +1,48 @@
+@use "../chat/Header.scss";
+
+div.friend-header {
+    @extend div, .chat-header;
+
+    &.light {
+        background-color: mediumseagreen;
+
+        button.theme {
+            color: white;
+            background-color: rgba(255, 255, 255, 0.2);
+
+            &:hover {
+                cursor: pointer;
+                background-color: rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+
+    &.dark {
+        background-color: darkslategray;
+
+        button.theme {
+            color: lightgrey;
+            background-color: rgba(0, 0, 0, 0.2);
+
+            &:hover {
+                cursor: pointer;
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+        }
+    }
+
+    button.theme {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        transform: translate3d(-50%, -50%, 0);
+        border-radius: 100%;
+        border: none;
+
+        i {
+            font-size: 1.2em;
+        }
+    }
+}
