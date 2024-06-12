@@ -1,0 +1,72 @@
+$video-border-radius: 10px;
+
+div.video-box {
+    width: 300px;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+
+    button.like {
+        width: 50px;
+        height: 40px;
+        position: absolute;
+        bottom: 0;
+        right: -65px;
+        background-color: transparent;
+        border: none;
+        color: darkslategray;
+        font-size: 1.2em;
+
+        &:hover {
+            cursor: pointer;
+            color: darkolivegreen
+        }
+    }
+}
+
+div.video {
+    width: 300px;
+    margin: 10px;
+    display: flex;
+    position: relative;
+    box-shadow: 0 0 5px gray;
+    border-radius: $video-border-radius;
+
+    &:hover {
+        filter: brightness(90%);
+        cursor: pointer;
+
+        i.fa-video {
+            visibility: hidden;
+        }
+
+        i.control {
+            visibility: visible;
+        }
+    }
+
+    video {
+        width: inherit;
+        left: 0;
+        border-radius: $video-border-radius;
+    }
+
+    i.fa-video {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        color: white;
+        text-shadow: 0 0 5px gray;
+    }
+
+    i.control {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        font-size: 2.5em;
+        color: white;
+        text-shadow: 0 0 5px gray;
+        visibility: hidden;
+    }
+}

@@ -7,6 +7,7 @@ import ChatBox5State from "./pages/5_state/Box";
 import ChatBox6Input from "./pages/6_input/Box";
 import ChatMain7Preservation from "./pages/7_preservation/Main";
 import ChatMain8Context from "./pages/8_context/Main";
+import ChatMain9Context from "./pages/9_ref/Main";
 
 export interface ComponentRoute {
     component: () => React.JSX.Element;
@@ -67,6 +68,14 @@ export const componentRoutes: ComponentRoute[] = [
         component: ChatMain8Context,
         path: "/8-context",
         title: "8. Context 전달하기",
+        postUrl:
+            "https://oimbook.tistory.com/entry/7-State-%EB%B3%B4%EC%A1%B4%ED%95%98%EA%B8%B0"
+        ,
+    },
+    {
+        component: ChatMain9Context,
+        path: "/9-ref",
+        title: "9. Ref로 비디오 제어해보기",
         postUrl:
             "https://oimbook.tistory.com/entry/7-State-%EB%B3%B4%EC%A1%B4%ED%95%98%EA%B8%B0"
         ,

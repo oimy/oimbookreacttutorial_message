@@ -1,0 +1,17 @@
+$screen-height: 260px;
+
+div.screen {
+    height: $screen-height;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+
+    &.light {
+        background-color: aliceblue;
+    }
+
+    &.dark {
+        background-color: rgb(48, 48, 48);
+    }
+}

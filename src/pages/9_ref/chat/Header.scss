@@ -1,0 +1,45 @@
+@use "Box";
+
+$header-height: 50px;
+
+div.chat-header {
+    width: 100%;
+    height: $header-height;
+    position: relative;
+    border-top-left-radius: Box.$box-border-radius;
+    border-top-right-radius: Box.$box-border-radius;
+
+    &.light {
+        background-color: teal;
+    }
+
+    &.dark {
+        background-color: #005050;
+    }
+
+    span.title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        color: white;
+        font-weight: bold;
+        text-shadow: 0 0 10px grey;
+    }
+}
+
+div.chat-header button.menu-button {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translate3d(-50%, -50%, 0);
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.3em;
+    cursor: pointer;
+
+    &:hover {
+        font-size: 1.4em;
+    }
+}
